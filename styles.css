@@ -42,6 +42,8 @@ body {
 .count {
   font-size: 9.6rem;
   font-weight: normal;
+  width: 12rem;
+  text-align: center;
 }
 
 .buttons {
