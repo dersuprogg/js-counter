@@ -10,3 +10,8 @@ incrementBtn.addEventListener("click", () => {
   count++;
   countHeader.textContent = count;
 });
+
+decrementBtn.addEventListener("click", () => {
+  count--;
+  countHeader.textContent = count;
+});
