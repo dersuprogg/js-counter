@@ -6,17 +6,26 @@ const incrementBtn = document.querySelector(".btn-increment");
 const decrementBtn = document.querySelector(".btn-decrement");
 let count = 0;
 
+const limit = 10;
+
 incrementBtn.addEventListener("click", () => {
-  count++;
-  countHeader.textContent = count;
+  if (count === limit) {
+    displayHeader.textContent = "You've reached the limit. Buy Pro.";
+  } else {
+    count++;
+    countHeader.textContent = count;
+  }
 });
 
 decrementBtn.addEventListener("click", () => {
-  count--;
-  countHeader.textContent = count;
+  if (count !== 0) {
+    count--;
+    countHeader.textContent = count;
+  }
 });
 
 resetBtn.addEventListener("click", () => {
   count = 0;
   countHeader.textContent = count;
+  displayHeader.innerHTML = `FANCY <br> COUNTER`;
 });
