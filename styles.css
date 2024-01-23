@@ -8,3 +8,76 @@
 *::before {
   box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    linear-gradient(180deg, #00ff7f, #1e90ff);
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 5rem 10rem;
+  background-color: #00fff2;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+}
+
+.display-header {
+  font-weight: normal;
+  text-align: center;
+}
+
+.count {
+  font-size: 9.6rem;
+  font-weight: normal;
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttons .btn {
+  background-color: #272727;
+  color: #60efb8;
+  padding: 0.5rem 0;
+}
+
+.btn.btn-reset {
+  color: #272727d2;
+}
+
+.buttons .btn:first-child {
+  border-bottom-left-radius: 7px;
+  border-right: 1px solid #494949;
+}
+
+.buttons .btn:last-child {
+  border-bottom-right-radius: 7px;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  font-size: 3rem;
+  font-family: inherit;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.buttons .btn {
+  flex-grow: 1;
+}
