@@ -15,3 +15,8 @@ decrementBtn.addEventListener("click", () => {
   count--;
   countHeader.textContent = count;
 });
+
+resetBtn.addEventListener("click", () => {
+  count = 0;
+  countHeader.textContent = count;
+});
