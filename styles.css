@@ -116,4 +116,9 @@ body {
   .buttons .btn:last-child {
     border-radius: 0;
   }
+
+  .buttons .btn {
+    padding: 2rem 0;
+    font-size: 4rem;
+  }
 }
