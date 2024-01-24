@@ -7,7 +7,7 @@ const incrementBtn = document.querySelector(".btn-increment");
 const decrementBtn = document.querySelector(".btn-decrement");
 let count = 0;
 
-const limit = 5;
+const limit = 1000;
 
 incrementBtn.addEventListener("click", () => {
   count++;
